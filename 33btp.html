@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap--列表组</title>
+	<link rel='stylesheet' href='bootstrap-3.3.5-dist/css/bootstrap.min.css'>
+	<script src="bootstrap-3.3.5-dist/js/jquery-2.1.4.js"></script>
+	<script src='bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
+</head>
+<body>
+	<h4>列表组--基本列表组</h4>
+	<ul class="list-group">
+		<li class="list-group-item">揭开CSS3的面纱</li>
+		<li class="list-group-item">CSS3选择器</li>
+		<li class="list-group-item">CSS3边框</li>
+		<li class="list-group-item">CSS3背景</li>
+		<li class="list-group-item">CSS3文本</li>
+	</ul>
+	<h4>列表组--带徽章的列表组</h4>
+	<ul class="list-group">
+		<li class="list-group-item">
+			<span class="badge">13</span>
+			揭开CSS3的神秘面纱
+		</li>
+		<li class="list-group-item">
+			<span class="badge">456</span>
+			CSS3选择器
+		</li>
+		<li class="list-group-item">
+		CSS3选择器
+			<span class="badge ">892</span>
+		</li>
+		<li class="list-group-item">
+			<span class="badge">90</span>
+			CSS3背景
+		</li>
+		<li class="list-group-item">
+			<span class="badge">1290</span>
+			CSS3文本
+		</li>
+	</ul>
+	<h4>列表组--带链接的列表组(有bug的)</h4>
+	<ul class='list-group'>
+		<li class="list-group-item"><a href="#">揭开CSS3的神秘面纱</a></li>
+		<li class="list-group-item"><a href="#">CSS3选择器</a></li>
+		<li class="list-group-item"><a href="#">CSS3选择器</a></li>
+		<li class="list-group-item"><a href="#">CSS3背景</a></li>
+		<li class="list-group-item"><a href="#">CSS3文本</a></li>
+	</ul>
+	<h4>列表组--带链接的列表组(无bug的)</h4>
+	<div class='list-group'>
+		<a class="list-group-item" href="#">揭开CSS3的神秘面纱
+			<span class="badge">23</span>
+		</a>
+		<a class="list-group-item" href="#">CSS3选择器
+			<span class="badge">23</span>
+		</a>
+		<a class="list-group-item" href="#">
+		     CSS3选择器
+		     <span class="badge">23</span>
+		</a>
+		<a class="list-group-item" href="#">CSS3背景</a>
+		<a class="list-group-item" href="#">CSS3文本</a>
+	</div>
+	<h4>自定义列表组</h4>
+	<div class="list-group">
+		<a href="#" class="list-group-item">
+			<h4 class="list-group-item-heading">图解CSS3</h4>
+			<p class="list-group-item-text">详细讲解了选择器、边框、背景、文本、颜色、盒模型、伸缩布局盒模型、多列布局、渐变、过渡、动画、媒体、响应Web设计、Web字体等主题下涵盖的所有CSS3新特性...</p>
+		</a>
+		<a href="#" class="list-group-item">
+			<h4 class="list-group-item-heading">
+			SASS中国
+				<span class="badge">30</span>
+			</h4>
+			<p class="list-group-item-text">致力于为中国开发者提供最全面，最具影响力，最前沿的Sass相关技术与教程...</p>
+			
+		</a>
+		<a href="#" class="list-group-item">
+			<h4 class="list-group-item-heading">
+			基于Bootstrap的网页开发
+				<span class="badge ">5</span>
+				
+			</h4>
+			<p class="list-group-item-text">致力于为中国开发者提供最全面，最具影响力，最前沿的Sass相关技术与教程...</p>
+			
+		</a>
+	</div>
+</body>
+</html>

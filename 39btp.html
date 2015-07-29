@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap--模态框示例</title>
+	<link rel='stylesheet' href='bootstrap-3.3.5-dist/css/bootstrap.min.css'>
+	<script src="bootstrap-3.3.5-dist/js/jquery-2.1.4.js"></script>
+	<script src='bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
+</head>
+<body>
+<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#mymodal" >开始模拟模态框</button>
+	<div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal" aria-hidden="true">
+						<span >&times;</span>
+						
+					</button>
+					<h4 class="modal-title" id="myModalLabel">模态框标题</h4>
+				</div>
+				<div class="modal-body">
+					<p>模态框内容</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button class="btn btn-primary">保存</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+   $(function () { $('#mymodal').modal({
+      keyboard: true
+   })});
+</script>
+</body>
+</html>
